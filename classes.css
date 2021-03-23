@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+/* START NAV BAR CLASSES */
+nav.main_navigation {
+  width: 100vw;
+  height: 50px;
+  background-color: darkgray;
+}
+
+ul.align_navigation_items {
+  width: 50vw;
+  min-width: 325px;
+  margin: auto;
+}
+
+nav.main_navigation li {
+  float: left;
+  width: 10vw;
+  min-width: 80px;
+  margin: 10px 1vw;
+  padding: 5px;
+  background: gray;
+  list-style: none;
+  text-align: center;
+}
+
+nav.main_navigation a:link,
+nav.main_navigation a:visited  {
+  color: white;
+  text-decoration: none;
+}
+/* END NAV BAR CLASSES */
+
+
+/* START CONTAINER CLASSES */
+section.content {
+  margin: auto;
+  margin-top: 30px;
+  width: 80vw;
+  height: 600px;
+  overflow: auto;
+  background: lightgray;
+  background-image: url("background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/* END CONTAINER CLASSES */
+
+/* START FORM AND TEXT CLASSES */
+h1 {
+  font-family: Redressed, cursive;
+  color: red;
+  font-size: 70px;
+}
+
+p.warning {
+  color: red;
+  font-size: 20px;
+}
+
+div.login_form {
+  width: 20vw;
+  min-width: 20vw;
+  margin: 100px auto;
+  padding: 20px 50px;
+  background-color: rgba(189, 189, 189, 0.70);
+  border-radius: 20px;
+}
+
+input {
+  width: 20vw;
+  color: black;
+  font-size: 25px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background: #e1f5fe;
+}
+
+input[type=submit] {
+  padding: 5px;
+  color: black;
+}
+
+/* END FORM AND TEXT CLASSES */
