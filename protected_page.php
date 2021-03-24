@@ -20,6 +20,10 @@ if (isset($_SESSION["loggedIn"])) {
     <?php include("navbar.html"); ?> <!--Include main navigation bar-->
     <section class="content"><!-- MAIN CONTAINER -->
 
+      <?php
+        include ("page_Yaroslav.html");
+       ?>
+
 
 
 
