@@ -2,7 +2,7 @@
 session_start();
 if (isset($_SESSION["loggedIn"])) {
 } else {
-  header("Location:login_page.php?message=protected_page");
+  header("Location:index.php?message=protected_page");
 }
 ?>
 
@@ -21,7 +21,8 @@ if (isset($_SESSION["loggedIn"])) {
     <section class="content"><!-- MAIN CONTAINER -->
 
       <?php
-        include ("page_Yaroslav.html");
+        $pageToInclude = $_SESSION["currentUser"];
+        include ("page_" . $pageToInclude . ".html");
        ?>
 
 

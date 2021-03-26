@@ -52,23 +52,36 @@ section.content {
 
 div.user_content {
   width: 100%;
+  overflow: hidden;
 }
 /* END CONTAINER CLASSES */
 
 /* START FORM AND TEXT CLASSES */
-h1 {
+h1, h2 {
   font-family: Redressed, cursive;
   color: red;
+}
+
+h1 {
   font-size: 70px;
 }
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+
 
 p.warning {
   color: red;
   font-size: 20px;
 }
 
- p {
+ p.content {
    font-size: 20px;
+   font-weight: 600;
  }
 
 
@@ -101,7 +114,22 @@ input[type=submit] {
 
 /* START TABLE CLASSES */
 div.col_2 {
-  width: 50%;
+  width: 46%;
+  max-width: 46%;
   float: left;
+  background: blue;
+  margin: 20px 1%;
+  padding: 20px 1%;
+  background: rgba(224, 224, 224, 0.80);
+  border-radius: 10px;
+  height: 300px
 }
-/* START TABLE CLASSES */
+/* END TABLE CLASSES */
+
+
+/* START IMAGE CLASSES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* END IMAGE CLASSES */

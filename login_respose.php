@@ -17,7 +17,7 @@ switch ($enteredName) {
       $_SESSION["currentUser"] = "$enteredName";
       header ("Location:protected_page.php");
     } else {
-      header ("Location:login_page.php?message=wrong_credentials");
+      header ("Location:index.php?message=wrong_credentials");
     }
     break;
 
@@ -27,12 +27,12 @@ switch ($enteredName) {
       $_SESSION["currentUser"] = "$enteredName";
       header ("Location:protected_page.php?message=wrong_credentials");
     } else {
-      header ("Location:login_page.php?message=wrong_credentials");
+      header ("Location:index.php?message=wrong_credentials");
     }
     break;
 
   default:
-    header ("Location:login_page.php?message=invalid_username");//username not found
+    header ("Location:index.php?message=invalid_username");//username not found
     break;
 }
 
