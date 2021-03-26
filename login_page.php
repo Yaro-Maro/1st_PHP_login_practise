@@ -21,7 +21,8 @@
 
 /*Show a message if user is already logged in. Otherwise show a login form.*/
 if (isset($_SESSION["loggedIn"])) {
-    $contentToDisplay = '<h1 style="text-align: center;">You are already <br>logged in!</h1>';
+    $currentlyLoggedIn = $_SESSION["currentUser"];
+    $contentToDisplay = '<h1 style="text-align: center;">You are already <br>logged in as ' . ucwords($currentlyLoggedIn) . '</h1>';
 } else {
   $contentToDisplay = <<<LOGIN_FORM
   <p class="warning">$logInMessage</p>

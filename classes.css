@@ -44,10 +44,14 @@ section.content {
   height: 600px;
   overflow: auto;
   background: lightgray;
-  background-image: url("background.gif");
+  background-image: url("img/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+div.user_content {
+  width: 100%;
 }
 /* END CONTAINER CLASSES */
 
@@ -62,6 +66,11 @@ p.warning {
   color: red;
   font-size: 20px;
 }
+
+ p {
+   font-size: 20px;
+ }
+
 
 div.login_form {
   width: 20vw;
@@ -89,3 +98,10 @@ input[type=submit] {
 }
 
 /* END FORM AND TEXT CLASSES */
+
+/* START TABLE CLASSES */
+div.col_2 {
+  width: 50%;
+  float: left;
+}
+/* START TABLE CLASSES */
